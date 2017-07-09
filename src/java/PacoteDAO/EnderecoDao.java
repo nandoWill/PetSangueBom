@@ -11,5 +11,11 @@ import Model.Endereco;
  * @author biscoito
  */
 public class EnderecoDao {
-   Endereco enderecoDao = new endereco();
+   Endereco enderecoDao = new Endereco();
+   
+   public String buscarEndereco(String endereco){
+       String resultado = endereco;
+       
+       return resultado;
+   }
 }
