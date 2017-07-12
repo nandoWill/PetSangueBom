@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Model;
 
 /**
@@ -10,5 +5,11 @@ package Model;
  * @author Nêro
  */
 public interface AnimalFactory {
-    
+    String especieAnimal;
+    String racaAnimal;
+    String nomeAnimal;
+    String tipoSangAnimal;
+    float pesoAnimal;
+
+    public boolean criarAnimal();
 }

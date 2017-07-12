@@ -6,25 +6,31 @@ import java.util.Date;
  * @author biscoito
  */
 public class Pessoa {
-    	private String nome;
+    private String nome;
 
-	private String sobrenome;
+    private String sobrenome;
 
-	private String cpf;
+    private String cpf;
 
-	private String login;
+    private String login;
 
-	private String senha;
+    private String senha;
 
-	private Date dt_nascimento;
+    private Date dt_nascimento;
 
-	private String no_celular;
+    private String no_celular;
 
-	private String email;
-        
-        private Endereco endereco;
-        
-        private String celular2;
+    private String email;
+
+    private Endereco endereco;
+
+    private int id;
+
+    private String celular2;
+
+    public Pessoa(){
+        super();
+    }
 
     public Pessoa(String nome, String sobrenome, String cpf, String login, String senha, Date dt_nascimento, String no_celular, String email, Endereco endereco, String celular2) {
         this.nome = nome;
@@ -37,6 +43,14 @@ public class Pessoa {
         this.email = email;
         this.endereco = endereco;
         this.celular2 = celular2;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCelular2() {
@@ -83,7 +97,7 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
-        
+
     public String getNome() {
         return nome;
     }
@@ -119,10 +133,5 @@ public class Pessoa {
     public Endereco getEndereco() {
         return endereco;
     }
-        	
-
-public Pessoa(){
-    super();
-}
 
 }

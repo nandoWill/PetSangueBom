@@ -11,6 +11,11 @@ import java.sql.SQLException;
  * @author biscoito
  */
 public final class BaseDAO {
+
+    private static BaseDAO instance;
+    public static BaseDAO getInstance() {
+        return instance == null ? instance = new BaseDAO() : instance;
+    }
      
     public static java.sql.Connection getConexaoMySQL() {
  
@@ -21,7 +26,7 @@ public final class BaseDAO {
         String driverName = "com.mysql.jdbc.Driver";                        
  
         Class.forName(driverName);
-            String serverName = "localhost:3306/petsanguebom";    //caminho do servidor do BD  
+            String serverName = "localhost:3306/PetSangueBom";    //caminho do servidor do BD  
             String url = "jdbc:mysql://" + serverName; 
             String username = "root";        //nome de um usuário de seu BD 
             String password = "12345";      //sua senha de acesso 
